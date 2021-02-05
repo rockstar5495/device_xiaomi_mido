@@ -47,7 +47,8 @@ vendor.audio.feature.anc_headset.enable=true \
 vendor.audio.feature.fm.enable=true \
 vendor.audio.read.wsatz.type=true \
 vendor.audio.feature.multi_voice_session.enable=true \
-vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.incall_music.enable=true \
+sys.display-size=3840x2160 
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
