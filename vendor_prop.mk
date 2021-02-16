@@ -1,6 +1,13 @@
 #
 # system.prop for mido
 #
+# ADB on boot
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=2 \
