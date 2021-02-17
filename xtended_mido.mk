@@ -28,7 +28,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 XTENDED_BUILD_TYPE := UnOfficial
 
 # Maintainer
-XTENDED_MAINTAINER := Pratyaksh_Bharadwaj
+XTENDED_MAINTAINER := 🔥Pratyaksh💥Bharadwaj🔥
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
