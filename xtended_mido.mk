@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Official
-XTENDED_BUILD_TYPE := UnOfficial
+XTENDED_BUILD_TYPE := OFFICIAL
 
 # Maintainer
 XTENDED_MAINTAINER := 🔥Pratyaksh💥Bharadwaj🔥
