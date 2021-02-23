@@ -308,6 +308,10 @@ service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     group radio cache inet misc audio sdcard_r sdcard_rw diag log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
+on property:dev.bootcomplete=1
+    setprop sys.io.scheduler "bfq"
+    restart ril-daemon
+
 service vendor.charger /system/bin/chargeonlymode
     class charger
     user system
@@ -355,6 +359,3 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system wakelock uhid input context_hub
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
-
-on property:dev.bootcomplete=1
-    setprop sys.io.scheduler "bfq"
