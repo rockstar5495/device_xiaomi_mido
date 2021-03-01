@@ -578,6 +578,11 @@
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 
+    <!-- Smart charge sysfs node and value for suspend/resume charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeVale" translatable="false">1</string>
+
     <!-- Wired/BT headset focus mode -->
     <bool name="config_deviceRingtoneFocusMode">true</bool>
 
