@@ -37,6 +37,7 @@ vendor.audio.tunnel.encode=false \
 vendor.audio.use.sw.alac.decoder=true \
 vendor.audio.use.sw.ape.decoder=true \
 vendor.audio_hal.period_size=192 \
+vendor.audio.read.wsatz.type=true \
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1 \
 vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
@@ -46,19 +47,22 @@ vendor.voice.voip.conc.disabled=true
 
 # Audio dynamic feature flags
 PRODUCT_PROPERTY_OVERRIDES += \
-vendor.audio.feature.hifi_audio.enable=true \
-vendor.audio.feature.compr_voip.enable=true \
-vendor.audio.feature.compress_meta_data.enable=true \
-vendor.audio.feature.src_trkn.enable=true \
-vendor.audio.feature.wsa.enable=true \
-vendor.audio.feature.fluence.enable=true \
-vendor.audio.feature.custom_stereo.enable=true \
 vendor.audio.feature.anc_headset.enable=true \
+vendor.audio.feature.compress_meta_data.enable=true \
+vendor.audio.feature.compr_voip.enable=true \
+vendor.audio.feature.custom_stereo.enable=true \
+vendor.audio.feature.fluence.enable=true \
 vendor.audio.feature.fm.enable=true \
-vendor.audio.read.wsatz.type=true \
-vendor.audio.feature.multi_voice_session.enable=true \
+vendor.audio.feature.hfp.enable=true \
+vendor.audio.feature.hifi_audio.enable=true \
 vendor.audio.feature.incall_music.enable=true \
-sys.display-size=3840x2160
+vendor.audio.feature.kpi_optimize.enable=true \
+vendor.audio.feature.multi_voice_session.enable=true \
+vendor.audio.feature.snd_mon.enable=true \
+vendor.audio.feature.spkr_prot.enable=true \
+vendor.audio.feature.src_trkn.enable=true \
+vendor.audio.feature.vbat.enable=true \
+vendor.audio.feature.wsa.enable=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -115,6 +119,7 @@ vendor.display.enable_default_color_mode=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.gralloc.disable_ahardware_buffer=1 \
 vendor.gralloc.enable_fb_ubwc=1
+sys.display-size=3840x2160
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
