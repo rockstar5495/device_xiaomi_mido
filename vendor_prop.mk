@@ -57,7 +57,7 @@ vendor.audio.feature.fm.enable=true \
 vendor.audio.read.wsatz.type=true \
 vendor.audio.feature.multi_voice_session.enable=true \
 vendor.audio.feature.incall_music.enable=true \
-sys.display-size=3840x2160 
+sys.display-size=3840x2160
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -250,10 +250,6 @@ wifi.interface=wlan0
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
-
-# priv-app permissions
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.control_privapp_permissions=false
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
