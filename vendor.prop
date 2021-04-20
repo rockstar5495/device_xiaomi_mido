@@ -109,6 +109,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Media
 debug.stagefright.omx_default_rank=0
 vendor.vidc.disable.split.mode=1
+mm.enable.sec.smoothstreaming=true \
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
