@@ -21,28 +21,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Official
-COLT_BUILD_TYPE := UNOFFICIAL
+AOSP_BUILD_TYPE := UNOFFICIAL
 
 # Maintainer
-COLT_DEVICE_MAINTAINER := 🔥Pratyaksh💥Bharadwaj🔥
+PRODUCT_PROPERTY_OVERRIDES += \
+org.maintainer := 🔥Pratyaksh💥Bharadwaj🔥
 
-# Colt Stuff
-PRODUCT_PRODUCT_PROPERTIES += \
-ro.colt.maintainer := 🔥Pratyaksh💥Bharadwaj🔥
-ro.colt.cpu := SD625(MSM8953)
 # GApps
 TARGET_GAPPS_ARCH := arm64
 
 # Mido bootanimation flag
-TARGET_BOOT_ANIMATION_RES := 1080x1920
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME :=colt_mido
+PRODUCT_NAME :=aosp_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
