@@ -11,10 +11,6 @@ r_dir_file(system_app sysfs_zram)
 allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read open getattr };
 
-# Allow theme_prop to be read and set by Settings
-get_prop(system_app, theme_prop)
-set_prop(system_app, theme_prop)
-
 # AdvancedControls
 allow system_app sysfs_kcal:dir search;
 allow system_app sysfs_kcal:file rw_file_perms;
