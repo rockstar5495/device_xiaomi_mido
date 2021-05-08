@@ -4,3 +4,9 @@
 
 # Default to BFQ I/O scheduler
 persist.sys.io.scheduler=bfq
+
+# Octavi
+ro.octavi.maintainer=Sagar.Rokade
+ro.octavi.status=2.4
+ro.octavi.branding=Official
+ro.octavi.cpu=SD625
