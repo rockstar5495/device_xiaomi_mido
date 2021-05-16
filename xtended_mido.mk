@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
+# Inherit common Google Stuff
+$(call inherit-product, vendor/google/gms/gms-vendor.mk)
+
 # Official
 XTENDED_BUILD_TYPE := OFFICIAL
 
@@ -32,9 +35,15 @@ XTENDED_MAINTAINER := 🔥Pratyaksh💥Bharadwaj🔥
 
 # GApps
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Mido bootanimation flag
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# REMOVE_GAPPS_PACKGES += \
+  Chrome \
+  GoogleDialer
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
