@@ -1,13 +1,13 @@
 [
  {
-   "repository" : "kernel_xiaomi_mido",
+   "repository" : "shashank1436/kernel_xiaomi_mido",
    "target_path": "kernel/xiaomi/mido",
-   "remote"     : "rockstar5495",
+   "remote"     : "github",
    "branch"     : "r11"
  },
-   "repository" : "vendor_xiaomi_mido",
+   "repository" : "rockstar5495/vendor_xiaomi_mido",
    "target_path": "vendor/xiaomi",
-   "remote"     : "rockstar5495",
+   "remote"     : "github",
    "branch"     : "r11"
  }
 ]
